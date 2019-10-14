@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="morpion.fx.v2.ControllerV2">
+   <center>
+<GridPane fx:id="grille" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Label text="..." GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      <Label text="..." GridPane.columnIndex="1" GridPane.rowIndex="0" />
+      <Label text="..." GridPane.columnIndex="2" GridPane.rowIndex="0" />
+      <Label text="..." GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <Label text="..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="..." GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label text="..." GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <Label text="..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label text="..." GridPane.columnIndex="2" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
+   </center>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="labelNbCoups" text="Nb coups" />
+            <Label fx:id="labelEtatJeu" text="etat jeu" GridPane.columnIndex="1" />
+            <Label fx:id="labelJoueur" prefHeight="17.0" prefWidth="72.0" text="Joueur" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
